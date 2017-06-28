@@ -5,6 +5,9 @@ import './App.css';
 import SearchBar from "./SearchBar";
 import ProductTable from "./ProductTable";
 
+import Toggle from './Toggle';
+import MyForm from './MyForm';
+import Calculator from './Calculator';
 
 
 class App extends Component {
@@ -14,6 +17,21 @@ class App extends Component {
     console.log(props.products)
   }
   render() {
+
+    return(
+      <Calculator />
+    )
+
+    return(
+      <MyForm />
+    )
+
+
+    // Basic Render Component
+    return(
+      <Toggle />
+    )
+
     return (
       <div className="App container">
         <h1>Inventory widget</h1>
